@@ -123,247 +123,238 @@ ______________________________________________________________
   4.1 - Instalar o theme spaceship para o terminal zsh
   ~ comando: git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"  
   ~ comando: npm install -g spaceship-prompt  
-  ~ comando: ln -s " $ ZSH_CUSTOM /themes/spaceship-prompt/spaceship.zsh-theme "  " $ ZSH_CUSTOM /themes/spaceship.zsh-theme "   
+  ~ comando: ln -s " $ ZSH_CUSTOM /themes/spaceship-prompt/spaceship.zsh-theme "  " $ ZSH_CUSTOM /themes/spaceship.zsh-theme " 
+  ~ comando: sudo chown -R $USER /usr/local/lib/node_modules (Caso haja um erro de permissão nas na etapa de NPM)
   
   4.2 Liberar o comando .code no VSCODE em Shell Command: Install 'code' command in PATH
   
-  4.3 - utilizar o comando code para editar o arquivo .zshrc com: code. ~/.zshrc
+  4.3 - Utilizar o comando code para editar o arquivo .zshrc com: code. ~/.zshrc
   
   4.5 - Colar as configurações no terminal para o arquivo .zshrc:
   
-    # If you come from bash you might have to change your $PATH.
+    
+      export ZSH="/home/isaac/.oh-my-zsh" 
+      export ZSH="/Users/isaac/.oh-my-zsh"
+      export PATH="$PATH:/usr/local/bin"
+      export PATH="$HOME/.fastlane/bin:$PATH"
+      # Set name of the theme to load --- if set to "random", it will
 
-    # export PATH=$HOME/bin:/usr/local/bin:$PATH
+      # load a random theme each time oh-my-zsh is loaded, in which case,
 
-    # Path to your oh-my-zsh installation.
+      # to know which specific one was loaded, run: echo $RANDOM_THEME
 
-    export ZSH="/home/isaac/.oh-my-zsh"
+      # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-    # Set name of the theme to load --- if set to "random", it will
+      # Set list of themes to pick from when loading at random
 
-    # load a random theme each time oh-my-zsh is loaded, in which case,
+      # Setting this variable when ZSH_THEME=random will cause zsh to load
 
-    # to know which specific one was loaded, run: echo $RANDOM_THEME
+      # a theme from this variable instead of looking in $ZSH/themes/
 
-    # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+      # If set to an empty array, this variable will have no effect.
 
-    # Set list of themes to pick from when loading at random
+      # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-    # Setting this variable when ZSH_THEME=random will cause zsh to load
+      ZSH_THEME="spaceship"
 
-    # a theme from this variable instead of looking in $ZSH/themes/
+      # Uncomment the following line to use case-sensitive completion.
 
-    # If set to an empty array, this variable will have no effect.
+      # CASE_SENSITIVE="true"
 
-    # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+      # Uncomment the following line to use hyphen-insensitive completion.
 
-    ZSH_THEME="spaceship"
+      # Case-sensitive completion must be off. _ and - will be interchangeable.
 
-    # Uncomment the following line to use case-sensitive completion.
+      # HYPHEN_INSENSITIVE="true"
 
-    # CASE_SENSITIVE="true"
+      # Uncomment the following line to disable bi-weekly auto-update checks.
 
-    # Uncomment the following line to use hyphen-insensitive completion.
+      # DISABLE_AUTO_UPDATE="true"
 
-    # Case-sensitive completion must be off. _ and - will be interchangeable.
+      # Uncomment the following line to automatically update without prompting.
 
-    # HYPHEN_INSENSITIVE="true"
+      # DISABLE_UPDATE_PROMPT="true"
 
-    # Uncomment the following line to disable bi-weekly auto-update checks.
+      # Uncomment the following line to change how often to auto-update (in days).
 
-    # DISABLE_AUTO_UPDATE="true"
+      # export UPDATE_ZSH_DAYS=13
 
-    # Uncomment the following line to automatically update without prompting.
+      # Uncomment the following line if pasting URLs and other text is messed up.
 
-    # DISABLE_UPDATE_PROMPT="true"
+      # DISABLE_MAGIC_FUNCTIONS="true"
 
-    # Uncomment the following line to change how often to auto-update (in days).
+      # Uncomment the following line to disable colors in ls.
 
-    # export UPDATE_ZSH_DAYS=13
+      # DISABLE_LS_COLORS="true"
 
-    # Uncomment the following line if pasting URLs and other text is messed up.
+      # Uncomment the following line to disable auto-setting terminal title.
 
-    # DISABLE_MAGIC_FUNCTIONS="true"
+      # DISABLE_AUTO_TITLE="true"
 
-    # Uncomment the following line to disable colors in ls.
+      # Uncomment the following line to enable command auto-correction.
 
-    # DISABLE_LS_COLORS="true"
+      # ENABLE_CORRECTION="true"
 
-    # Uncomment the following line to disable auto-setting terminal title.
+      # Uncomment the following line to display red dots whilst waiting for completion.
 
-    # DISABLE_AUTO_TITLE="true"
+      # COMPLETION_WAITING_DOTS="true"
 
-    # Uncomment the following line to enable command auto-correction.
+      # Uncomment the following line if you want to disable marking untracked files
 
-    # ENABLE_CORRECTION="true"
+      # under VCS as dirty. This makes repository status check for large repositories
 
-    # Uncomment the following line to display red dots whilst waiting for completion.
+      # much, much faster.
 
-    # COMPLETION_WAITING_DOTS="true"
+      # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-    # Uncomment the following line if you want to disable marking untracked files
+      # Uncomment the following line if you want to change the command execution time
 
-    # under VCS as dirty. This makes repository status check for large repositories
+      # stamp shown in the history command output.
 
-    # much, much faster.
+      # You can set one of the optional three formats:
 
-    # DISABLE_UNTRACKED_FILES_DIRTY="true"
+      # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 
-    # Uncomment the following line if you want to change the command execution time
+      # or set a custom format using the strftime function format specifications,
 
-    # stamp shown in the history command output.
+      # see 'man strftime' for details.
 
-    # You can set one of the optional three formats:
+      # HIST_STAMPS="mm/dd/yyyy"
 
-    # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+      # Would you like to use another custom folder than $ZSH/custom?
 
-    # or set a custom format using the strftime function format specifications,
+      # ZSH_CUSTOM=/path/to/new-custom-folder
 
-    # see 'man strftime' for details.
+      # Which plugins would you like to load?
 
-    # HIST_STAMPS="mm/dd/yyyy"
+      # Standard plugins can be found in $ZSH/plugins/
 
-    # Would you like to use another custom folder than $ZSH/custom?
+      # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 
-    # ZSH_CUSTOM=/path/to/new-custom-folder
+      # Example format: plugins=(rails git textmate ruby lighthouse)
 
-    # Which plugins would you like to load?
+      # Add wisely, as too many plugins slow down shell startup.
 
-    # Standard plugins can be found in $ZSH/plugins/
+      plugins=(git)
 
-    # Custom plugins may be added to $ZSH_CUSTOM/plugins/
+      source $ZSH/oh-my-zsh.sh
 
-    # Example format: plugins=(rails git textmate ruby lighthouse)
+      #zinit light zdharma/fast-syntax-highlighting
 
-    # Add wisely, as too many plugins slow down shell startup.
+      #zinit light zsh-users/zsh-autosuggestions
 
-    plugins=(git)
+      #zinit light zsh-users/zsh-completions
 
-    source $ZSH/oh-my-zsh.sh
+      # User configuration
 
-    #zinit light zdharma/fast-syntax-highlighting
+      # export MANPATH="/usr/local/man:$MANPATH"
 
-    #zinit light zsh-users/zsh-autosuggestions
+      # You may need to manually set your language environment
 
-    #zinit light zsh-users/zsh-completions
+      # export LANG=en_US.UTF-8
 
-    # User configuration
+      # Preferred editor for local and remote sessions
 
-    # export MANPATH="/usr/local/man:$MANPATH"
+      # if [[ -n $SSH_CONNECTION ]]; then
 
-    # You may need to manually set your language environment
+      # export EDITOR='vim'
 
-    # export LANG=en_US.UTF-8
+      # else
 
-    # Preferred editor for local and remote sessions
+      # export EDITOR='mvim'
 
-    # if [[ -n $SSH_CONNECTION ]]; then
+      # fi
 
-    # export EDITOR='vim'
+      # Compilation flags
 
-    # else
+      # export ARCHFLAGS="-arch x86_64"
 
-    # export EDITOR='mvim'
+      # Set personal aliases, overriding those provided by oh-my-zsh libs,
 
-    # fi
+      # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 
-    # Compilation flags
+      # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 
-    # export ARCHFLAGS="-arch x86_64"
+      # For a full list of active aliases, run `alias`.
 
-    # Set personal aliases, overriding those provided by oh-my-zsh libs,
+      #
 
-    # plugins, and themes. Aliases can be placed here, though oh-my-zsh
+      # Example aliases
 
-    # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+      # alias zshconfig="mate ~/.zshrc"
 
-    # For a full list of active aliases, run `alias`.
+      # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-    #
+      SPACESHIP_PROMPT_ORDER=(
 
-    # Example aliases
+      user # Username section
 
-    # alias zshconfig="mate ~/.zshrc"
+      dir # Current directory section
 
-    # alias ohmyzsh="mate ~/.oh-my-zsh"
+      host # Hostname section
 
-    SPACESHIP_PROMPT_ORDER=(
+      git # Git section (git_branch + git_status)
 
-    user # Username section
+      hg # Mercurial section (hg_branch + hg_status)
 
-    dir # Current directory section
+      exec_time # Execution time
 
-    host # Hostname section
+      line_sep # Line break
 
-    git # Git section (git_branch + git_status)
+      vi_mode # Vi-mode indicator
 
-    hg # Mercurial section (hg_branch + hg_status)
+      jobs # Background jobs indicator
 
-    exec_time # Execution time
+      exit_code # Exit code section
 
-    line_sep # Line break
+      char # Prompt character
 
-    vi_mode # Vi-mode indicator
+      )
 
-    jobs # Background jobs indicator
+      SPACESHIP_USER_SHOW=always
 
-    exit_code # Exit code section
+      SPACESHIP_PROMPT_ADD_NEWLINE=false
 
-    char # Prompt character
+      SPACESHIP_CHAR_SYMBOL="❯"
 
-    )
+      SPACESHIP_CHAR_SUFFIX=" "
 
-    SPACESHIP_USER_SHOW=always
 
-    SPACESHIP_PROMPT_ADD_NEWLINE=false
+      pasteinit() {
+        OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+        zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+      }
 
-    SPACESHIP_CHAR_SYMBOL="❯"
+      pastefinish() {
+        zle -N self-insert $OLD_SELF_INSERT
+      }
+      zstyle :bracketed-paste-magic paste-init pasteinit
+      zstyle :bracketed-paste-magic paste-finish pastefinish
+      ### Added by Zinit's installer
+      if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+          print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+          command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+          command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+              print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+              print -P "%F{160}▓▒░ The clone has failed.%f%b"
+      fi
 
-    SPACESHIP_CHAR_SUFFIX=" "
+      source "$HOME/.zinit/bin/zinit.zsh"
+      autoload -Uz _zinit
+      (( ${+_comps} )) && _comps[zinit]=_zinit
 
-    ### Added by Zinit's installer
+      # Load a few important annexes, without Turbo
+      # (this is currently required for annexes)
+      zinit light-mode for \
+          zinit-zsh/z-a-rust \
+          zinit-zsh/z-a-as-monitor \
+          zinit-zsh/z-a-patch-dl \
+          zinit-zsh/z-a-bin-gem-node
 
-    if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-
-    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
-
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-
-    print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
-
-    print -P "%F{160}▓▒░ The clone has failed.%f%b"
-
-    fi
-
-    source "$HOME/.zinit/bin/zinit.zsh"
-
-    autoload -Uz _zinit
-
-    (( ${+_comps} )) && _comps[zinit]=_zinit
-
-    # Load a few important annexes, without Turbo
-
-    # (this is currently required for annexes)
-
-    zinit light-mode for \
-
-    zinit-zsh/z-a-rust \
-
-    zinit-zsh/z-a-as-monitor \
-
-    zinit-zsh/z-a-patch-dl \
-
-    zinit-zsh/z-a-bin-gem-node
-
-    ### End of Zinit's installer chunk
-
-    zinit light zdharma/fast-syntax-highlighting
-
-    zinit light zsh-users/zsh-autosuggestions
-
-    zinit light zsh-users/zsh-completions 
+      zinit light zdharma/fast-syntax-highlighting
+      zinit light zsh-users/zsh-autosuggestions
+      zinit light zsh-users/zsh-completions
+      ### End of Zinit's installer chunk
     
     --Em breve o criarei um repositório para as configurações do terminal--
     _____________________________________________
@@ -374,4 +365,11 @@ ______________________________________________________________
 6 - Instalar o Notion
   ~ comando: brew install --cask notion      
   
-7 - 
+7 - Extensões do chrome:
+   ~ JSON viewer
+   ~ React developer tools
+   ~ Octotree
+    
+8 - Ferramentas:
+   ~ Whimsical #UX
+   ~ Insominia #API
