@@ -10,11 +10,17 @@ _____________________________________________________________
   Plugins:
   
   ~ ColorHighlight – Esse plugin mostra a cor exata de todos RGB’s ou HEX em seu código, muito útil para quem trabalha com CSS ou SASS;
+  
   DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
+  
   ~ Dracula Official – Tema que utilizo no meu VSCode e em todos outros editores/terminais, pra mim foi o tema que mais me agradou durante mais tempo e olha que já usei muitos;
+  
   ~ EditorConfig – Plugin utilizado para padronizar quebra de linha, indentação, espaços e tabs entre desenvolvedores de um mesmo projeto;
+  
   ~ ESLint – Plugin utilizado para padronizar código entre desenvolvedores como utilização de pontos e vírgulas, tamanho máximo de caracteres em linhas e todo outro tipo de padronização. Recomendo muito a utilização desse plugin junto aos guias de estilo do AirBnB;
+  
   ~ Markdown All in One – Plugin que utilizo para escrever e ler Markdown dentro do VSCode, muito útil para documentações o README’s do Github;
+  
   ~ Material Icon Theme – Utilizo para exibir os ícones de acordo com a linguagem utilizada na minha sidebar. Fica muito legal mesmo pois esse plugin identifica a grande parte de libs e ferramentas.
   
   ~ Configurações do settings.json:
