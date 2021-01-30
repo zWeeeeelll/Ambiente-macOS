@@ -3,7 +3,7 @@ Minhas configuração do ambiente macOS
 
 1 - Instalar o gerenciador de pacotes HOMEBREW
   ~ comando: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-_____________________________________________________________
+__________________________________________________________________________________________________________________________
 2 - Instalar o editor de texto VSCODE
   ~ comando: brew cask install visual-studio-code
   
@@ -77,7 +77,7 @@ _____________________________________________________________
       }  
       
     --Em breve link de repositorio das configurações do VSCODE--
-______________________________________________________________
+___________________________________________________________________________________________________________________________
 
 
 3 - Instalar o NODE
@@ -120,7 +120,7 @@ ______________________________________________________________
         undo = checkout --
         rollback = reset --soft HEAD~1  
    --Em breve criarei repositório das configurações do meu git--
-  _________________________________________________________
+  ______________________________________________________________________________________________________________________
 
 4 - Instalar o terminal Oh-My-Zsh
   ~ comando: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -363,7 +363,7 @@ ______________________________________________________________
       ### End of Zinit's installer chunk
     
     --Em breve o criarei um repositório para as configurações do terminal--
-    _____________________________________________
+    __________________________________________________________________________________________________________
    
 5 - Instalar a consulta de documentações DevDocs
   ~ comando: brew install --cask devdocs
