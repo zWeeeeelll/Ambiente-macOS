@@ -11,7 +11,7 @@ ________________________________________________________________________________
   
   ~ ColorHighlight – Esse plugin mostra a cor exata de todos RGB’s ou HEX em seu código, muito útil para quem trabalha com CSS ou SASS;
   
-  DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
+  ~ DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
   
   ~ Dracula Official – Tema que utilizo no meu VSCode e em todos outros editores/terminais, pra mim foi o tema que mais me agradou durante mais tempo e olha que já usei muitos;
   
