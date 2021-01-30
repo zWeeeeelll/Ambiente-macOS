@@ -372,12 +372,11 @@ ________________________________________________________________________________
   ~ comando: brew install --cask notion      
   
 7 - Extensões do chrome:
-
-  ~ JSON viewer
-  ~ React developer tools  
-  ~ Octotree
+  ~ JSON viewer;
+  ~ React developer tools;
+  ~ Octotree;
    
    
 8 - Ferramentas:
-  ~ Whimsical #UX
-  ~ Insominia #API
+  ~ Whimsical #UX;
+  ~ Insominia #API;
