@@ -363,7 +363,7 @@ ________________________________________________________________________________
       ### End of Zinit's installer chunk
     
     --Em breve o criarei um repositório para as configurações do terminal--
-    __________________________________________________________________________________________________________
+ __________________________________________________________________________________________________________
    
 5 - Instalar a consulta de documentações DevDocs
   ~ comando: brew install --cask devdocs
