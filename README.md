@@ -83,7 +83,7 @@ ________________________________________________________________________________
   * bash: brew install node
   
 
-4 - Instalar o GIT
+### 4. - Instalar o GIT
   * bash: brew install git  
   
   #### Configurações no arquivo .gitconfig:
@@ -120,21 +120,21 @@ ________________________________________________________________________________
         rollback = reset --soft HEAD~1  
   ______________________________________________________________________________________________________________________
 
-### 4. - Instalar o terminal Oh-My-Zsh
+### 5. - Instalar o terminal Oh-My-Zsh
   ~ bash: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   
   
-  #### 4.1. Instalar o theme spaceship para o terminal zsh
+  #### 5.1. Instalar o theme spaceship para o terminal zsh
   * bash: git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"  
   * bash: npm install -g spaceship-prompt  
   * bash: ln -s " $ ZSH_CUSTOM /themes/spaceship-prompt/spaceship.zsh-theme "  " $ ZSH_CUSTOM /themes/spaceship.zsh-theme " 
   * bash: sudo chown -R $USER /usr/local/lib/node_modules (Caso haja um erro de permissão nas na etapa de NPM)
   
-  #### 4.2. Liberar o comando .code no VSCODE em Shell Command: Install 'code' command in PATH
+  #### 5.2. Liberar o comando .code no VSCODE em Shell Command: Install 'code' command in PATH
   
-  #### 4.3. Utilizar o comando code para editar o arquivo .zshrc com: code. ~/.zshrc
+  #### 5.3. Utilizar o comando code para editar o arquivo .zshrc com: code. ~/.zshrc
   
-  #### 4.5. Colar as configurações no terminal para o arquivo .zshrc:
+  #### 5.5. Colar as configurações no terminal para o arquivo .zshrc:
   
     
       export ZSH="/home/isaac/.oh-my-zsh" 
@@ -362,18 +362,18 @@ ________________________________________________________________________________
       
  __________________________________________________________________________________________________________
    
-### 5. Instalar a consulta de documentações DevDocs
+### 6. Instalar a consulta de documentações DevDocs
   * comando: brew install --cask devdocs
   
-### 6. Instalar o Notion
+### 7. Instalar o Notion
   * comando: brew install --cask notion      
   
-### 7. Extensões do chrome:
+### 8. Extensões do chrome:
   * JSON viewer;
   * React developer tools;
   * Octotree;
    
    
-### 8. Ferramentas:
+### 9. Ferramentas:
   * Whimsical #UX;
   * Insominia #API;
