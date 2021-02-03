@@ -1,29 +1,29 @@
 # Ambiente-macOS
-Minhas configuração do ambiente macOS
+## Minhas configuração do ambiente macOS
 
-1 - Instalar o gerenciador de pacotes HOMEBREW
-  ~ comando: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+### 1. Instalar o gerenciador de pacotes HOMEBREW
+  * bash: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 __________________________________________________________________________________________________________________________
-2 - Instalar o editor de texto VSCODE
-  ~ comando: brew cask install visual-studio-code
+### 2. Instalar o editor de texto VSCODE
+  * bash: brew cask install visual-studio-code
   
-  Plugins:
+  ## Plugins:
   
-  ~ ColorHighlight – Esse plugin mostra a cor exata de todos RGB’s ou HEX em seu código, muito útil para quem trabalha com CSS ou SASS;
+  * ColorHighlight – Esse plugin mostra a cor exata de todos RGB’s ou HEX em seu código, muito útil para quem trabalha com CSS ou SASS;
   
-  ~ DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
+  * DotEnv – Plugin que utilizo para ter suporte à sintaxe .env, muito útil para quem trabalha com NodeJS, ReactJS ou qualquer outro tipo de projeto web;
   
-  ~ Dracula Official – Tema que utilizo no meu VSCode e em todos outros editores/terminais, pra mim foi o tema que mais me agradou durante mais tempo e olha que já usei muitos;
+  * Dracula Official – Tema que utilizo no meu VSCode e em todos outros editores/terminais, pra mim foi o tema que mais me agradou durante mais tempo e olha que já usei muitos;
   
-  ~ EditorConfig – Plugin utilizado para padronizar quebra de linha, indentação, espaços e tabs entre desenvolvedores de um mesmo projeto;
+  * EditorConfig – Plugin utilizado para padronizar quebra de linha, indentação, espaços e tabs entre desenvolvedores de um mesmo projeto;
   
-  ~ ESLint – Plugin utilizado para padronizar código entre desenvolvedores como utilização de pontos e vírgulas, tamanho máximo de caracteres em linhas e todo outro tipo de padronização. Recomendo muito a utilização desse plugin junto aos guias de estilo do AirBnB;
+  * ESLint – Plugin utilizado para padronizar código entre desenvolvedores como utilização de pontos e vírgulas, tamanho máximo de caracteres em linhas e todo outro tipo de padronização. Recomendo muito a utilização desse plugin junto aos guias de estilo do AirBnB;
   
-  ~ Markdown All in One – Plugin que utilizo para escrever e ler Markdown dentro do VSCode, muito útil para documentações o README’s do Github;
+  * Markdown All in One – Plugin que utilizo para escrever e ler Markdown dentro do VSCode, muito útil para documentações o README’s do Github;
   
-  ~ Material Icon Theme – Utilizo para exibir os ícones de acordo com a linguagem utilizada na minha sidebar. Fica muito legal mesmo pois esse plugin identifica a grande parte de libs e ferramentas.
+  * Material Icon Theme – Utilizo para exibir os ícones de acordo com a linguagem utilizada na minha sidebar. Fica muito legal mesmo pois esse plugin identifica a grande parte de libs e ferramentas.
   
-  ~ Configurações do settings.json:
+  #### Configurações do settings.json:
   
       {
       "workbench.colorTheme": "Dracula",
@@ -76,18 +76,17 @@ ________________________________________________________________________________
 
       }  
       
-    --Em breve link de repositorio das configurações do VSCODE--
 ___________________________________________________________________________________________________________________________
 
 
-3 - Instalar o NODE
-  ~ comando: brew install node
+### 3. Instalar o NODE
+  * bash: brew install node
   
 
 4 - Instalar o GIT
-  ~ comando: brew install git  
+  * bash: brew install git  
   
-  Configurações no arquivo .gitconfig:
+  #### Configurações no arquivo .gitconfig:
   
         [color]
         ui = true
@@ -119,24 +118,23 @@ ________________________________________________________________________________
         unstage = reset HEAD --
         undo = checkout --
         rollback = reset --soft HEAD~1  
-   --Em breve criarei repositório das configurações do meu git--
   ______________________________________________________________________________________________________________________
 
-4 - Instalar o terminal Oh-My-Zsh
-  ~ comando: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+### 4. - Instalar o terminal Oh-My-Zsh
+  ~ bash: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   
   
-  4.1 - Instalar o theme spaceship para o terminal zsh
-  ~ comando: git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"  
-  ~ comando: npm install -g spaceship-prompt  
-  ~ comando: ln -s " $ ZSH_CUSTOM /themes/spaceship-prompt/spaceship.zsh-theme "  " $ ZSH_CUSTOM /themes/spaceship.zsh-theme " 
-  ~ comando: sudo chown -R $USER /usr/local/lib/node_modules (Caso haja um erro de permissão nas na etapa de NPM)
+  #### 4.1. Instalar o theme spaceship para o terminal zsh
+  * bash: git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"  
+  * bash: npm install -g spaceship-prompt  
+  * bash: ln -s " $ ZSH_CUSTOM /themes/spaceship-prompt/spaceship.zsh-theme "  " $ ZSH_CUSTOM /themes/spaceship.zsh-theme " 
+  * bash: sudo chown -R $USER /usr/local/lib/node_modules (Caso haja um erro de permissão nas na etapa de NPM)
   
-  4.2 Liberar o comando .code no VSCODE em Shell Command: Install 'code' command in PATH
+  #### 4.2. Liberar o comando .code no VSCODE em Shell Command: Install 'code' command in PATH
   
-  4.3 - Utilizar o comando code para editar o arquivo .zshrc com: code. ~/.zshrc
+  #### 4.3. Utilizar o comando code para editar o arquivo .zshrc com: code. ~/.zshrc
   
-  4.5 - Colar as configurações no terminal para o arquivo .zshrc:
+  #### 4.5. Colar as configurações no terminal para o arquivo .zshrc:
   
     
       export ZSH="/home/isaac/.oh-my-zsh" 
@@ -361,22 +359,21 @@ ________________________________________________________________________________
       zinit light zsh-users/zsh-autosuggestions
       zinit light zsh-users/zsh-completions
       ### End of Zinit's installer chunk
-    
-    --Em breve o criarei um repositório para as configurações do terminal--
+      
  __________________________________________________________________________________________________________
    
-5 - Instalar a consulta de documentações DevDocs
-  ~ comando: brew install --cask devdocs
+### 5. Instalar a consulta de documentações DevDocs
+  * comando: brew install --cask devdocs
   
-6 - Instalar o Notion
-  ~ comando: brew install --cask notion      
+### 6. Instalar o Notion
+  * comando: brew install --cask notion      
   
-7 - Extensões do chrome:
-  ~ JSON viewer;
-  ~ React developer tools;
-  ~ Octotree;
+### 7. Extensões do chrome:
+  * JSON viewer;
+  * React developer tools;
+  * Octotree;
    
    
-8 - Ferramentas:
-  ~ Whimsical #UX;
-  ~ Insominia #API;
+### 8. Ferramentas:
+  * Whimsical #UX;
+  * Insominia #API;
